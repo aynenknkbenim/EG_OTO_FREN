@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EG OTO FREN - 7/24 Yol Yardım</title>
+  <style>
+    /* Genel stil ayarları */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: Arial, sans-serif;
+      color: #333;
+      line-height: 1.6;
+    }
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; display: block; }
+
+    /* Header */
+    header {
+      position: relative;
+      height: 70vh;
+      background: #000;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+    }
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: url("arkaplan.jpeg") center/cover no-repeat;
+      /* ↑ Buraya kendi tır görselinizin yolunu yazın */
+      opacity: 0.3;
+    }
+    .header-content {
+      position: relative;
+      z-index: 1;
+    }
+    .header-content h1 {
+      font-size: 3rem;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      color: #fff;
+    }
+
+    /* Firma ismi ve Instagram */
+    .top-bar {
+      position: absolute;
+      top: 20px; left: 20px;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .company-name img {
+      width: 400px;
+      height: 400px;
+    }
+    .instagram-links {
+      margin-left: auto;
+      display: flex;
+      gap: 10px;
+    }
+    .instagram-links a img {
+      width: 32px;
+      height: 32px;
+    }
+
+    /* Hizmetler bölümü */
+    .services {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .services h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2rem;
+      position: relative;
+    }
+    .services h2::after {
+      content: "";
+      width: 80px;
+      height: 4px;
+      background: #f39c12;
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+    .service-card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform .2s;
+      background: #fff;
+    }
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+    .service-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .service-card-content {
+      padding: 20px;
+    }
+    .service-card-content h3 {
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+      color: #333;
+    }
+    .service-card-content p {
+      font-size: 0.95rem;
+      color: #666;
+    }
+
+    /* İletişim bölümü */
+    .contact {
+      background: #f9f9f9;
+      padding: 60px 20px;
+    }
+    .contact .info {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+    }
+    .contact h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    .contact p {
+      margin-bottom: 10px;
+      font-size: 1rem;
+    }
+    .contact .masters {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin-top: 30px;
+    }
+    .master-card {
+      text-align: center;
+    }
+    .master-card h3 {
+      font-size: 1.1rem;
+      margin-bottom: 5px;
+    }
+    .master-card p {
+      color: #555;
+      font-size: 0.95rem;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #333;
+      color: #fff;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Üst Bar: Sadece Logo ve Instagram -->
+  <div class="top-bar">
+    <div class="company-name">
+      <img src="logo.png" alt="EG OTO FREN Logo" />
+    </div>
+    <div class="instagram-links">
+      <a href="https://instagram.com/grkn_btmn_" target="_blank">
+        <img src="ins.avif" alt="Instagram @grkn_btmn_" />
+      </a>
+      <a href="https://instagram.com/emirhan.035" target="_blank">
+        <img src="ins.avif" alt="Instagram @emirhan.035" />
+      </a>
+    </div>
+  </div>
+
+  <!-- Başlık Bölümü -->
+  <header>
+    <div class="header-content">
+      <h1>7/24 Yol Yardım</h1>
+    </div>
+  </header>
+
+  <!-- Hizmetler -->
+  <section class="services">
+    <h2>Hizmetlerimiz</h2>
+    <div class="service-grid">
+      <div class="service-card">
+        <img src="disk.webp" alt="Disk Değişimi ve Tamiratı" />
+        <div class="service-card-content">
+          <h3>Disk Değişimi ve Tamiratı</h3>
+          <p>Yolda disk arızalarına anında müdahale.</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <img src="fren_balata.jpg" alt="Balata Değişimi ve Tamiratı" />
+        <div class="service-card-content">
+          <h3>Balata Değişimi ve Tamiratı</h3>
+          <p>Profesyonel balata onarım ve değişim hizmeti.</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <img src="körük.png" alt="Körük Değişimi ve Tamiratı" />
+        <div class="service-card-content">
+          <h3>Körük Değişimi ve Tamiratı</h3>
+          <p>Hava körüğü sorunlarını hızlıca çözüyoruz.</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <img src="knorr_bremse_kaliper.jpg" alt="Kaliper Tamiri" />
+        <div class="service-card-content">
+          <h3>Kaliper Tamiri</h3>
+          <p>Kaliper arızalarına yerinde müdahale.</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <img src="ventil.jpeg" alt="Ventil Değişimi ve Tamiratı" />
+        <div class="service-card-content">
+          <h3>Ventil Değişimi ve Tamiratı</h3>
+          <p>Ventil sorunlarını en hızlı şekilde çözeriz.</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <img src="images.png" alt="Hava Tesisatı Değişimi ve Tamiratı" />
+        <div class="service-card-content">
+          <h3>Hava Tesisatı Değişimi ve Tamiratı</h3>
+          <p>Hava hattı arızalarına profesyonel destek.</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <img src="aha.webp" alt="Hava Kaçakları Bakımı" />
+        <div class="service-card-content">
+          <h3>Hava Kaçakları Bakımı</h3>
+          <p>Kaçak tespit ve onarım hizmeti.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- İletişim ve Ustalar -->
+  <section class="contact">
+    <div class="info">
+      <h2>İletişim & Ustalar</h2>
+      <p><strong>Lokasyon:</strong> İzmir / Bornova ve çevre ilçeler</p>
+      <div class="masters">
+        <div class="master-card">
+          <h3>Gürkan Batman</h3>
+          <p><a href="tel:+905314962968">0531 496 2968</a></p>
+        </div>
+        <div class="master-card">
+          <h3>Emirhan Özkan</h3>
+          <p><a href="tel:+9054664703325">0546 647 03325</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 EG OTO FREN. Tüm hakları saklıdır.
+  </footer>
+
+</body>
+</html>
